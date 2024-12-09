@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                    // The target version of JavaScript (ES6 is common for modern browsers)
+      "module": "ESNext",                  // Module system used in Webpack, use ESNext for modern JavaScript
+      "jsx": "react-jsx",                      // Support for JSX syntax (React)
+      "strict": true,                      // Enable strict mode for better type safety
+      "esModuleInterop": true,             // Enables compatibility with CommonJS modules
+      "skipLibCheck": true,                // Skip type-checking of declaration files for faster builds
+      "forceConsistentCasingInFileNames": true, // Enforces consistent casing in file names
+      "moduleResolution": "node",          // Module resolution strategy (using Node.js resolution)
+      "resolveJsonModule": true,           // Allows importing JSON files
+      "baseUrl": ".",                      // The base directory for module resolution
+      "paths": {
+        "*": ["node_modules/*"],  
+        "@/*": ["src/*"]
+      }
+    },
+    "include": [
+      "src/**/*"                           // Include all source files
+    ],
+    "exclude": [
+      "node_modules"                       // Exclude node_modules
+    ]
+  }
+  
